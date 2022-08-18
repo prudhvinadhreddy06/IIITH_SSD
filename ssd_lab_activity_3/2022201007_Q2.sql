@@ -1,0 +1,1 @@
+SELECT CONCAT(sup.Fname," ", sup.Minit," ", sup.Lname) AS FULL_NAME, sup.Ssn ,sup.Dno, count(sub.Ssn) as No_of_Employees FROM EMPLOYEE sub JOIN EMPLOYEE sup ON sub.Super_ssn = sup.Ssn GROUP BY sup.Ssn,sup.Fname, sup.Minit ,sup.Lname ORDER BY No_of_Employees;
