@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="center">
+            
+            <form class="row">
+                <h1>Welcome to the SSD Lab</h1>
+                <div class="input">
+                    <label for="uname">Username</label><br>
+                    <input type="text" style="height:30px" name="uname" size="50"  class="flex-item" required> 
+                </div>
+                <br>
+                <div class="input">
+                    <label for="password">Password</label><br>
+                    <input type="text" style="height:30px" name="password" size="50" class="flex-item" required>
+                </div>
+                <br>
+                <input onclick="location.href = './studentRecords.html';" type="submit" value="Login"  id="button">
+              </form>
+        </div>
+</body>
+</html>
