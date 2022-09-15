@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" onsubmit="validateForm()">
+        <label for="ManagerName">Manager Name</label>
+        <input type="text" id="ManagerName" name="ManagerName" required><br>
+
+        <label for="GroupEmail">Group Email</label>
+        <input type="email" id="GroupEmail" name="GroupEmail" required><br>
+
+        <label for="ServerUsername">Server Username</label>
+        <input type="text" pattern="(?=.*\d)(?=.*[A-Z]).{2,}" id="ServerUsername" name="ServerUsername" required><br>  
+        
+        <label for="ServerPassword">Server Password</label>
+        <input type="password" id="ServerPassword" name="ServerPassword" required><br> 
+
+        
+        <label for="ConfirmPassword ">Confirm Password </label>
+        <input type="password" id="ConfirmPassword" name="ConfirmPassword" required><br> 
+
+        <label for="TeamLead">Team Lead</label>
+
+        <select name="TeamLead" id="TeamLead">
+          <option value="Ravi">Ravi</option>
+          <option value="Sai">Sai</option>
+          <option value="Kiran">Kiran</option>
+          <option value="Sri">Sri</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+
+
+    <div class="con">
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="AB">sai</p>
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="CD">teja</p>
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="EF">sri</p>
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="GH">dev</p>
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="IJ">deva</p>
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" value="KL">devi</p>
+        </div>
+        <div id="drag" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+      </form>
+      <script type="text/javascript" src="main.js"></script> 
+</body>
+</html>
